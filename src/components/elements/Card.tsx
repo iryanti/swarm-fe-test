@@ -1,5 +1,3 @@
-import Button from "./Button";
-
 interface CardProps {
   imageSrc: string;
   title: string;
