@@ -6,7 +6,7 @@ import avatar1 from "../../assets/avatar1.png";
 
 const Hero: React.FC = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div className="hero-desc">
         <h1>Discover Digital Art & Collect Nfts</h1>
         <p>
@@ -40,7 +40,7 @@ const Hero: React.FC = () => {
           creatorName="Animakid"
           creatorAvatar={avatar1}
         />
-    </div>
+    </section>
   );
 };
 

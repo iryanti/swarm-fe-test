@@ -1,3 +1,5 @@
+import Avatar from "./Avatar";
+
 interface CardProps {
   imageSrc: string;
   title: string;
@@ -14,7 +16,7 @@ export default function Card({
   title,
   description,
   creatorName,
-  creatorAvatar,
+  creatorAvatar="",
 }: CardProps) {
   return (
     <div className="bg-white  rounded-[20px] shadow-md overflow-hidden w-full max-w-[500px] transition hover:shadow-lg hover:-translate-y-1">
@@ -30,21 +32,7 @@ export default function Card({
         {description && (
           <p className="text-sm text-gray-600 line-clamp-2">{description}</p>
         )}
-
-        {creatorName && (
-          <div className="flex items-center gap-3 mt-2">
-            {creatorAvatar && (
-              <img
-                src={creatorAvatar}
-                alt={creatorName}
-                className="w-8 h-8 rounded-full object-cover"
-              />
-            )}
-            <p className="text-sm font-medium">
-              {creatorName}
-            </p>
-          </div>
-        )}
+        {creatorName && (<Avatar srcImage={creatorAvatar} creatorName={creatorName}/>)}
       </div>
     </div>
   );
