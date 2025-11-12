@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useCreatorStore } from "../../store/useCreatorStore";
-import CreatorCard from "../elements/CreatorCard";
+import CreatorCard from "../../components/elements/CreatorCard";
 
 export default function TopCreators() {
   const { creators, fetchCreators } = useCreatorStore();

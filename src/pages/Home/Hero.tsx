@@ -1,10 +1,11 @@
-import Button from "../elements/Button";
-import Card from "../elements/Card";
+
 import card1 from "../../assets/card1.png";
 import avatar1 from "../../assets/avatar1.png";
+import Card from "../../components/elements/Card";
+import Button from "../../components/elements/Button";
 
 
-const Hero: React.FC = () => {
+export default function Hero() {
   return (
     <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div className="hero-desc">
@@ -43,5 +44,3 @@ const Hero: React.FC = () => {
     </section>
   );
 };
-
-export default Hero;

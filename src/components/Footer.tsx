@@ -1,4 +1,4 @@
-const Footer: React.FC = () => {
+export default function Footer() {
   return (
     <footer className="bg-secondary text-white mt-auto">
       <div className="container mx-auto px-8 py-12">
@@ -96,7 +96,7 @@ const Footer: React.FC = () => {
               <p className="text-soft-gray text-sm">
                 Get exclusive promotions & updates straight to your inbox.
               </p>
-             <div className="hidden md:flex w-full items-center bg-white rounded-[20px] overflow-hidden shadow-sm h-[60px]">
+              <div className="hidden md:flex w-full items-center bg-white rounded-[20px] overflow-hidden shadow-sm h-[60px]">
                 <input
                   type="email"
                   placeholder="Enter your email here"
@@ -106,7 +106,7 @@ const Footer: React.FC = () => {
                   Subscribe
                 </button>
               </div>
-                <div className="grid md:hidden gap-4">
+              <div className="grid md:hidden gap-4">
                 <input
                   type="email"
                   placeholder="Enter your email here"
@@ -128,6 +128,4 @@ const Footer: React.FC = () => {
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}

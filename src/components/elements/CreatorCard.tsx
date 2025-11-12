@@ -16,7 +16,7 @@ export default function CreatorCard({
       key={rank}
       className="relative flex flex-col items-center justify-center bg-[#3B3B3B] rounded-[20px] p-6 hover:-translate-y-1 hover:shadow-lg transition"
     >
-      <span className="absolute top-3 left-3 bg-[#2B2B2B] text-gray-300 w-6 h-6 flex items-center justify-center text-xs font-semibold rounded-full">
+      <span className="absolute top-3 left-3 bg-primary text-gray-300 w-6 h-6 flex items-center justify-center text-xs font-semibold rounded-full">
         {rank}
       </span>
       <img

@@ -10,7 +10,7 @@ export default function CategoriesCard({
   icon,
 }: CategoriesCardProps) {
   return (
-    <div className="bg-[#3B3B3B] rounded-[20px] overflow-hidden hover:-translate-y-1 hover:shadow-lg transition cursor-pointer">
+    <div className="bg-primary rounded-[20px] overflow-hidden hover:-translate-y-1 hover:shadow-lg transition cursor-pointer">
       <div className="relative w-full h-[180px] md:h-[200px]">
         <img
           src={image}
@@ -25,7 +25,7 @@ export default function CategoriesCard({
           />
         </div>
       </div>
-      <div className="bg-[#2B2B2B] px-4 py-3">
+      <div className="bg-secondary px-4 py-3">
         <p className="font-semibold">{name}</p>
       </div>
     </div>

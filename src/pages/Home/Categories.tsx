@@ -1,4 +1,3 @@
-import CategoriesCard from "../elements/CategoriesCard";
 import PaintBrush from "../../assets/PaintBrush.svg";
 import Swatches from "../../assets/Swatches.svg";
 import MusicNotes from "../../assets/MusicNotes.svg";
@@ -7,6 +6,7 @@ import VideoCamera from "../../assets/VideoCamera.svg";
 import MagicWand from "../../assets/MagicWand.svg";
 import Basketball from "../../assets/Basketball.svg";
 import Planet from "../../assets/Planet.svg";
+import CategoriesCard from "../../components/elements/CategoriesCard";
 
 
 

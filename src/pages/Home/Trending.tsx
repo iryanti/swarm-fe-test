@@ -1,5 +1,5 @@
-import Avatar from "../elements/Avatar";
-import ImageCard from "../elements/ImageCard";
+import Avatar from "../../components/elements/Avatar";
+import ImageCard from "../../components/elements/ImageCard";
 import { useTrendingStore } from "../../store/useTrendingStore";
 import { useEffect } from "react";
 

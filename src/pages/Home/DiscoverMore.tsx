@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useDiscoverStore } from "../../store/useDiscoverStore";
-import DiscoverCard from "../elements/DiscoverCard";
+import DiscoverCard from "../../components/elements/DiscoverCard";
 
 export default function DiscoverMore() {
   const { discoverList, fetchDiscover } = useDiscoverStore();

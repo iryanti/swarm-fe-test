@@ -1,17 +1,23 @@
 import React, { useState } from "react";
 import Button from "./elements/Button";
+import { Link, useNavigate } from "react-router-dom";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+    const handleClick = () => {
+    navigate("/");
+  };
+
   return (
     <header className="bg-primary text-white py-[20px] px-[50px]">
       <div className="flex items-center justify-between">
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 cursor-pointer" onClick={handleClick}>
           <img
             src="https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/storefront-2@2x.svg"
             alt="Logo"
@@ -23,28 +29,28 @@ const Header: React.FC = () => {
         <nav className="hidden md:block">
           <ul className="flex items-center gap-6">
             <li>
-              <a
-                href="#"
+              <Link
+                to="/marketplace"
                 className="hover:text-blue-200 transition font-semibold"
               >
                 Marketplace
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                to="/rankings"
                 className="hover:text-blue-200 transition font-semibold"
               >
                 Rankings
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                to="/wallet"
                 className="hover:text-blue-200 transition font-semibold"
               >
                 Connect a wallet
-              </a>
+              </Link>
             </li>
             <li>
               <Button
